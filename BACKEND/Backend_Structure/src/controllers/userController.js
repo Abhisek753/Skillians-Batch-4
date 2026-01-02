@@ -1,9 +1,10 @@
-
+const users=require("../config/data")
 const getUsers=(req,res)=>{
-    console.log("server 1")
-    res.json({name:"Ravi"})
+  
+    res.json(users);
 };
 const getUserById=(req,res)=>{
-    res.send("id")
+    const id=Number(req.params.id);
+    res.json({id:id})
 }
-module.exports={getUsers,getUserById}
+module.exports= {getUsers,getUserById}
