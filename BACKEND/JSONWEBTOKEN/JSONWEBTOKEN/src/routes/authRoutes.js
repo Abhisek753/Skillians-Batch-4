@@ -1,14 +1,11 @@
 const express=require("express");
 const router=express.Router();
+const {login,verifyUser}=require("../controllers/authController");
+const authMiddleware = require("../middleware/authMiddleware");
 
-router.post("/login",(req,res)=>{
-  res.send("logged in")
-  //login
-})
+router.post("/login",login)
 
-router.get("/verify",(req,res)=>{
-  res.send("verified")
-  //verifyUser
-})
+router.get("/verify",authMiddleware,verifyUser);
+
 
 module.exports=router;
