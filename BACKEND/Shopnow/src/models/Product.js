@@ -7,7 +7,7 @@ const productSchema=new mongoose.Schema({
      category:String,
      image:String,
      createdBy:{type:mongoose.Schema.Types.ObjectId,ref:"User"}
-    
+     
 
 })
 module.exports=mongoose.model("Product",productSchema)
