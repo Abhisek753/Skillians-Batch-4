@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Css Class</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        /* p{
+            color: blueviolet;
+            font-size: large;
+        } */
+        span{
+            color: brown;
+        }
+        span{
+           color: blue;
+        }
+        /* element selector */
+        button{
+            background-color: blue;
+            color: white;
+        }
+        #element{
+            background-color: aqua;
+        }
+        .btn{
+            border: 2px solid black;
+        }
+       /* .parent p{
+        color: orange;
+        font-size: larger;
+       } */
+        .parent>p{
+            color: teal;
+        }
+        /* .one:hover{
+          color: green;
+        }
+         .two:hover{
+          color: rgb(159, 143, 193);
+        }
+         .three:hover{
+          color: rgb(128, 75, 0);
+        } */
+        /* .pseudo p:hover{
+            background-color: skyblue;
+        } */
+        /* .firstname:focus{
+            text-decoration: none;
+            border: 5px solid rgb(238, 255, 0);
+            color: orange;
+            background-color: aqua;
+            
+        } */
+         .pseudo span:nth-child(3){
+           background-color: red;
+            color: blue;
+         }
+         .pseudo1{
+            background-color: teal;
+          height: 30vh;
+          width: 30vw;
+         }
+         .main{
+           display: inline-block;
+           background-color: rgb(128, 128, 128);
+           color: red;
+           width: 100px;
+           height: 100px;
+           padding: 20px;
+           border:1px solid yellow;
+           margin:5px;
+          
+         }
+    </style>
+</head>
+<body>
+    <h1 style="color: red;background-color: gray;">Include css in html</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum animi autem sequi, doloribus rerum vitae debitis molestiae fuga eligendi mollitia? Consequatur fugit, vel, voluptas omnis reiciendis nemo molestiae natus blanditiis in quia asperiores similique facilis possimus? Nemo, aliquam sint. Magni perspiciatis culpa eum veritatis modi!</p>
+     <span>Second paragraph</span><br>
+     <span class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt debitis eveniet vero reiciendis ipsa perferendis totam blanditiis error doloribus, beatae libero. Neque, esse.</span>
+
+     <div id="element" class="btn">
+        <button>Submit form</button>
+     </div>
+     <div class="parent">
+        <p>direct child 1</p>
+         <p>direct child 2</p>
+          <p>direct child 3</p>
+        <div class="cards">
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, qui!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, magni voluptatibus magnam vero libero quibusdam?</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem, ipsum dolor.</p>
+            <div>
+                <p>nested p tag</p>
+            </div>
+        </div>
+        <div class="cards">
+             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, qui!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos, magni voluptatibus magnam vero libero quibusdam?</p>
+            <p>12345678</p>
+        </div>
+       
+     </div>
+     <div class="pseudo">
+        <div >Hi</div>
+        <span class="one">One </span>
+        <span class="two">Two</span>
+        <span class="three">Three</span>
+     </div>
+     <input placeholder="Enter you name" class="firstname">
+     <div class="pseudo1">
+        <div style="width: 80%;height: 20px; background-color: red;">Hi</div>
+      
+     </div>
+
+      <div class="main">
+        <div class="child">1</div>
+       </div>
+       <div class="main">
+        <div class="child">2</div>
+     </div>
+     <div style="display: inline;">one</div>
+     <div style="display: inline;">two</div>
+<span style="display: block;">This is inline element</span>
+<span style="display: block;">This is inline element</span>
+</body>
+</html>

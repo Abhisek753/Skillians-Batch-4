@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+.relative{
+    height: 100px;
+    width:100px;
+    background-color: rgb(205, 109, 50);
+    border: 2px solid red;
+    /* position: relative; */
+    z-index: 1;
+    left: 15px;
+    top: 15px;
+    overflow: hidden;
+}
+.absolute{
+    height: 100px;
+    width:100px;
+    background-color: rgb(50, 205, 66);
+    border: 2px solid red;
+    color: white;
+    overflow: hidden;
+    /* position: absolute; */
+    left: 15px;
+    top: 15px;
+}
+
+.nav{
+    background-color: gray;
+    position: fixed;
+    top: 1px;
+    width: 100vw;
+}
+.sticky{
+    background-color: teal;
+    color: white;
+    margin-top: 100px;
+    width: 400px;
+    height: 200px;
+    overflow: scroll;
+   
+}
+.banner{color: black;
+ position: sticky;
+    top: 1px;
+    z-index: 2;
+    background-color: blue;
+}
+.container{
+    background-color: teal;
+    display: inline-block;
+    height: 100px ;
+    width: 100px;
+    /* display: none; */
+    /* visibility: hidden; */
+}
+.parent{
+    height: 100px;
+    width: 200px;
+    background-color: yellowgreen;
+    border: 5px solid blue;
+    padding: 10px;
+    margin: 2px;
+    box-sizing:content-box ;
+}
