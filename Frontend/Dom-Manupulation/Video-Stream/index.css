@@ -18,6 +18,26 @@ body{
 
 }
 
+.search-bar{
+    flex:1;
+    display: flex;
+    justify-content: center;
+    margin: 0 20px;
+}
+
+.search-bar input{
+    padding: 10px 16px;
+    border: 1px solid #555;
+    width: 100%;
+    max-width: 400px;
+    font-size: 16px;
+    color: white;
+    background-color: #333;
+}
+.search-bar input:focus{
+    border-color: #fff;
+}
+
 .nav-logo h1{
     color: white;
 }

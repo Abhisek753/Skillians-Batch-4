@@ -29,16 +29,17 @@ async function handlCart(movie){
    }
 }
 
-function displayMovies(){
+function displayMovies(movies=allMovies){
  if(!moviesContainer){
    console.log("Movies container is missing")
  }
 
- if(!allMovies|| allMovies.length==0){
+ if(!movies|| movies.length==0){
     moviesContainer.innerHTML=`<p>No movies available</p>`
     return
  }
-allMovies.forEach(movie=>{
+ moviesContainer.innerHTML="";
+movies.forEach(movie=>{
  const card=document.createElement("div");
  card.className="movie-card";
  card.innerHTML=`
@@ -63,8 +64,23 @@ allMovies.forEach(movie=>{
  moviesContainer.appendChild(card);
 
 
-})
+});
 
 }
+
+// SEARCH FUNCTIONALITY
+
+const searchInput=document.getElementById("search-input");
+searchInput.addEventListener("input",()=>{
+   const searchValue=searchInput.value;
+   const filterMovies=allMovies.filter((movie)=>movie.title.toLowerCase().includes(searchValue.toLowerCase()));
+   displayMovies(filterMovies);
+ 
+})
+
+
+
+
+
 
 getMoviesData()

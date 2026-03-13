@@ -60,3 +60,22 @@
     font-size: 14px;
     font-weight: bold;
 }
+.movie-button{
+    gap: 8px;
+    display:flex;
+}
+.btn{
+    border: 2px solid black;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    flex: 1;
+}
+
+.btn-remove{
+    background-color: rgb(130, 42, 42);
+    color: white;
+}

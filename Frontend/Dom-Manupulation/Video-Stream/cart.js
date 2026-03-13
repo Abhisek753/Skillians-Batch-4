@@ -11,6 +11,21 @@ async function getMoviesData(){
    }
 
 };
+// REMOVE CART DATA
+
+async function removeFromCart(id) {
+  try{
+    await fetch(`http://localhost:3000/cart/${id}`,{
+      method:"DELETE"
+    })
+   alert("Movie removed from cart");
+   getMoviesData()
+  }catch(err){
+    console.log(err);
+  }
+}
+
+
 
 function displayMovies(){
  if(!moviesContainer){
@@ -33,9 +48,16 @@ allMovies.forEach(movie=>{
      <div class=" movie-year">${movie.year}</div>
       <div class=" movie-genre">${movie.Category}</div>
        <div class=" movie-rating">${movie.rating}⭐</div>
+      <div class="movie-button">
+       <button class="btn btn-remove">Remove</button>
+      </div>
        
  </div>
  `
+ let removeBtn=card.querySelector(".btn-remove");
+ removeBtn.addEventListener("click",()=>{
+  removeFromCart(movie.id);
+ })
 
  moviesContainer.appendChild(card);
 

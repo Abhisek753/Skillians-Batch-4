@@ -123,28 +123,12 @@
   ],
   "cart": [
     {
-      "id": "15",
-      "title": "Black Panther: Wakanda Forever",
-      "poster": "https://upload.wikimedia.org/wikipedia/en/4/4a/Oppenheimer_%28film%29.jpg",
-      "Category": "Action",
-      "rating": 8,
-      "year": 2022
-    },
-    {
-      "id": "2",
-      "title": "The Dark Knight Returns",
-      "poster": "https://upload.wikimedia.org/wikipedia/en/e/e9/Batman_The_Dark_Knight_Returns_%28film%29.jpg",
-      "Category": "Action",
-      "rating": 9.5,
-      "year": 2024
-    },
-    {
-      "id": "12",
-      "title": "Interstellar",
-      "poster": "https://upload.wikimedia.org/wikipedia/en/4/4a/Oppenheimer_%28film%29.jpg",
+      "id": "4",
+      "title": "Inception",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZjhkNjM0ZTMtNGM5MC00ZTQ3LTk3YmYtZTkzYzdiNWE0ZTA2XkEyXkFqcGc@._V1_.jpg",
       "Category": "Sci-Fi",
-      "rating": 9.3,
-      "year": 2014
+      "rating": 9.2,
+      "year": 2010
     },
     {
       "id": "2",
@@ -164,5 +148,9 @@
       "rating": 7.2,
       "year": 2023
     }
+  ],
+  "users":[
+    
   ]
+
 }
