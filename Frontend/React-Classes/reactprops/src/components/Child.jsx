@@ -1,9 +1,8 @@
 import React from 'react'
+import GrandChild from './GrandChild';
 
 const Child = (props) => {
-  console.log("Child props===>",props)
 let data=props.sports;
-console.log("my sports data coming from parent",data)
   return (
     <div style={{backgroundColor:"skyblue"}}>
       <div style={{border:"2px solid green"}}>
@@ -14,6 +13,8 @@ console.log("my sports data coming from parent",data)
             <li key={index} >{el}</li>
           ))}
         </ol>
+
+        <GrandChild data={data}/>
       </div>
     </div>
   )
