@@ -8,6 +8,7 @@ const Increment=()=>{
 }
 const Decrement=()=>{
   setValue(value-1)
+  //done
 }
 
 const Reset=()=>{
